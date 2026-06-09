@@ -1,0 +1,15 @@
+{
+  "name": "Ram",
+  "Employee": [
+    {
+      "name": "Employee 1",
+      "role": "Developer",
+      "type": "Active"
+    },
+    {
+      "name": "Employee 2",
+      "role": "Designer",
+      "type": "Inactive"
+    }
+  ]
+}

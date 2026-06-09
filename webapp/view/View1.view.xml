@@ -1,0 +1,344 @@
+<mvc:View
+    controllerName="demofiori.project1.controller.View1"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+>
+    <Page title=  "{i18n>welcome}">
+            <!-- "SAPUI5 Controls Practice" -->
+        <!-- <content>
+
+            <MessageStrip
+                text="Welcome Rudranil!"
+                type="Success"
+                showIcon="true"/>
+
+            <Panel
+                headerText="Employee Form"
+                expandable="true"
+                expanded="true">
+
+                <VBox class="sapUiSmallMargin">
+
+                    <Label text="Employee Name"/>
+
+                    <Input
+                        placeholder="Enter Name"
+                        width="300px"/>
+
+                    <Label text="Email"/>
+
+                    <Input
+                        placeholder="Enter Email"
+                        type="Email"/>
+
+                    <Label text="Date of Joining"/>
+
+                    <DatePicker width="300px"/>
+
+                    <Label text="Department"/>
+
+                    <ComboBox width="300px">
+
+                        <items>
+
+                            <core:Item
+                                key="IT"
+                                text="IT"/>
+
+                            <core:Item
+                                key="HR"
+                                text="HR"/>
+
+                            <core:Item
+                                key="Finance"
+                                text="Finance"/>
+
+                        </items>
+
+                    </ComboBox>
+
+                    <CheckBox
+                        text="Active Employee"
+                        selected="true"/>
+
+                    <Label text="Gender"/>
+
+                    <RadioButtonGroup columns="2">
+
+                        <buttons>
+
+                            <RadioButton text="Male"/>
+
+                            <RadioButton text="Female"/>
+
+                        </buttons>
+
+                    </RadioButtonGroup>
+
+                    <Label text="Address"/>
+
+                    <TextArea
+                        rows="4"
+                        placeholder="Enter Address"/>
+
+                    <Button
+                        text="Submit"
+                        type="Emphasized"
+                        icon="sap-icon://save"
+                        press = "onSubmit"/>
+
+                </VBox>
+
+            </Panel>
+
+            <Toolbar> -->
+        <!-- 
+                <Title text="Employee List"/>
+
+                <ToolbarSpacer/>
+
+                <SearchField
+                    width="250px"
+                    placeholder="Search"/>
+
+            </Toolbar>
+
+            <Table>
+
+                <columns>
+
+                    <Column>
+                        <Text text="Name"/>
+                    </Column>
+
+                    <Column>
+                        <Text text="Department"/>
+                    </Column>
+
+                    <Column>
+                        <Text text="Status"/>
+                    </Column>
+
+                </columns>
+
+                <items>
+
+                    <ColumnListItem>
+
+                        <cells>
+
+                            <Text text="Rudranil"/>
+
+                            <Text text="IT"/>
+
+                            <ObjectStatus
+                                text="Active"
+                                state="Success"/>
+
+                        </cells>
+
+                    </ColumnListItem>
+
+                </items>
+
+            </Table>
+
+            <ProgressIndicator
+                percentValue="75"
+                displayValue="75% Completed"/>
+
+            <Avatar
+                initials="RG"
+                displayShape="Circle"/>
+
+            <Switch state="false"/>
+
+            <Slider
+                min="0"
+                max="100"
+                value="50"/>
+
+            <Link
+    text="Open SAPUI5 Documentation"
+    href="https://ui5.sap.com"
+    target="_blank"/>    
+
+        </content> -->
+
+        <!-- Pratice 08/06/26 -->
+
+        <!-- <Input id="inputName"  placeholder="Enter your name" liveChange="onTextChange"></Input>
+
+        <Button id="idCleBtn" text="Clear" press="onPressClear" type="Negative" enabled="false"></Button> -->
+
+        <!-- FlexBox -->
+        <!-- <FlexBox justifyContent="SpaceAround" alignItems="Center" wrap="Wrap" class="sapUiSmallMarginTop">
+            <Input id="inputName"  placeholder="Enter your name" liveChange="onTextChange"></Input>
+
+            <Input id="inputEmail"  placeholder="Enter your Email" liveChange="onTextChange"></Input>
+
+            <Input id="inputDept"  placeholder="Enter your Department" liveChange="onTextChange"></Input>
+        </FlexBox> -->
+
+        <!-- vBox -->
+
+        <!-- <HBox width="100%" >
+        <Label
+            class="sapUiSmallMargin sapUiSmallMarginBegin"
+            text="Name"
+            labelFor="inputName"
+        />
+            <Input
+                id="inputName"
+                placeholder="Enter your name"
+                liveChange="onTextChange"
+            />
+
+            <layoutData>
+                <FlexItemData
+                    growFactor="1"
+                    
+                />
+            </layoutData>
+        
+        </HBox> -->
+        <!-- HBox -->
+        <!-- CSS Grid -->
+
+        <!-- <Button text="save" press="onPressSave"/> -->
+
+
+        <!-- List -->
+
+        <!-- <List id="employeeList" items = "{employeeModel>/Employee}" mode="MultiSelect" >
+            <items>
+
+                <StandardListItem
+                    title="{employeeModel>name}"
+                    description="{employeeModel>role}"
+                    info="{employeeModel>type}"
+                    icon="sap-icon://employee"
+                    infoState="Success"
+                    type="Active"
+                    press="onItemPress"/> -->
+
+                <!-- <StandardListItem
+                    title="{employeeModel>name}"
+                    description="{employeeModel>role}"
+                    info="{employeeModel>type}"
+                    icon="sap-icon://employee"
+                    infoState="Error"/>
+
+                <StandardListItem
+                    title="{employeeModel>name}"
+                    description="{employeeModel>role}"
+                    info="{employeeModel>type}"
+                    icon="sap-icon://employee"
+                    infoState="Warning" /> -->
+
+            <!-- </items>
+        </List> -->
+
+        <!-- 09/06/26 pratice -->
+
+        <!-- <Input
+            class="sapUiSmallMarginTop"
+            placeholder="Enter Employee Name"
+            id="inputName"
+            width="300px"
+            value="{employeeModel2>/name}"   
+         />
+
+         <List id="employeeList" items = "{employeeModel2>/Employee}" mode="MultiSelect" >
+            <items>
+
+                <StandardListItem
+                    title="{employeeModel2>name}"
+                    description="{employeeModel2>role}"
+                    info="{employeeModel2>type}"
+                    icon="sap-icon://employee"
+                    infoState="Success"
+                    type="Active"
+                    press="onItemPress"/>
+            </items>
+        </List>        -->
+
+
+        <!-- Types of model  -->
+
+        <!-- 1. In-view json model -->
+        <!-- 2. Compoment level json model -->
+        <!-- 3. External json model -->
+        <!--4. Manifest.json model entry -->
+        <!-- 5.Model.json file entry -->
+
+
+        <!-- Types of binding  -->
+
+        <!-- 1.Property Binding -->
+                <!-- <Input value="{employeeModel2>/name}"/>
+                <Button text="save" press="onPressSave"></Button> -->
+
+        <!-- 2. Aggregation Binding -->
+
+        <!-- <List id="employeeList" items = "{employeeModel2>/Employee}"  >
+            <StandardListItem title="{employeeModel2>name}" />
+        </List> -->
+
+        <!-- 3. Element Binding -->
+
+        <!-- <VBox
+             binding="{employeeModel2>/Employee/0}">
+
+            <Text text="{employeeModel2>name}" />
+
+            <Text text="{employeeModel2>role}" />
+
+            <Text text="{employeeModel2>type}" />
+
+        </VBox> -->
+
+        <!-- 4. One way binding -->
+        <!-- model -> view -->
+
+            <!-- <Input value="{employeeModel2>/name}" bindingMode="OneWay"/> -->
+
+        <!-- 5. Two way binding -->
+        <!-- model -> view and view -> model -->
+
+         <!-- <Input value="{employeeModel2>/name}" /> -->
+
+         <!-- 6. One time binding -->
+         <!-- Bind once when the view is loaded -->
+
+         <!-- <Input value="{employeeModel2>/name}" bindingMode="OneTime"/> -->
+
+         
+         <!-- Formatter  -->
+
+            <Input value="{employeeModel>/name}"/>
+            <Button text="save" press="onPressSave"
+                enabled="{
+                    path: 'employeeModel>/name',
+                    formatter: '.formatter.nameFormatter'
+                }"
+            />
+
+             <List id="employeeList" items = "{employeeModel>/Employee}" mode="MultiSelect" >
+            <items>
+
+                <StandardListItem
+                    title="{employeeModel>name}"
+                    description="{employeeModel>role}"
+                    info="{
+                        path: 'employeeModel>joindate',
+                        formatter: '.formatter.dateFormatter'
+                    }"
+                    icon="sap-icon://employee"
+                    />
+            </items>
+        </List>  
+
+    </Page>
+</mvc:View>

@@ -1,0 +1,106 @@
+<mvc:View
+    controllerName="demofiori.project1.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+
+    <Page title="Employee Registration" >
+
+        <content>
+
+            <VBox class="sapUiSmallMargin">
+
+                <Label text="Name"/>
+                <!-- <Input id="idName"/> -->
+
+                <Label text="Email"/>
+                <Input id="idEmail"/>
+
+                <Label text="Department"/>
+
+                <ComboBox id="idDept">
+
+                    <items>
+
+                        <core:Item key="IT" text="IT"/>
+                        <core:Item key="HR" text="HR"/>
+                        <core:Item key="Finance" text="Finance"/>
+
+                    </items>
+
+                </ComboBox>
+
+                <Label text="Salary"/>
+
+                <!-- <Input id="idSalary"/> -->
+
+                <Button
+                    text="Submit"
+                    press="onSubmit"
+                    type="Emphasized"/>
+
+            </VBox>
+
+            <Table
+                items="{employeeModel>/employees}"
+                inset="false">
+
+                <columns>
+
+                    <Column
+                        minScreenWidth="Tablet"
+                        demandPopin="true">
+
+                        <Text text="Name"/>
+
+                    </Column>
+
+                    <Column
+                        minScreenWidth="Tablet"
+                        demandPopin="true">
+
+                        <Text text="Email"/>
+
+                    </Column>
+
+                    <Column
+                        minScreenWidth="Tablet"
+                        demandPopin="true">
+
+                        <Text text="Department"/>
+
+                    </Column>
+
+                    <Column minScreenWidth="Tablet">
+                        <Text text="Salary"/>
+                    </Column>
+
+                </columns>
+
+                <items>
+
+                    <ColumnListItem>
+
+                        <cells>
+
+                            <Text text="{employeeModel>name}"/>
+
+                            <Text text="{employeeModel>email}"/>
+
+                            <Text text="{employeeModel>department}"/>
+
+                            <Text text="{employeeModel>salary}"/>
+
+                        </cells>
+
+                    </ColumnListItem>
+
+                </items>
+
+            </Table>
+
+        </content>
+
+    </Page>
+
+</mvc:View>

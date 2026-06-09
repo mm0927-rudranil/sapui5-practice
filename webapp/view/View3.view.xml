@@ -1,0 +1,203 @@
+<mvc:View
+    controllerName="demofiori.project1.controller.View3"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+
+    <Page title="Employee CRUD">
+
+        <content>
+
+            <VBox class="sapUiSmallMargin">
+
+                <Label text="Employee Name"/>
+                <Input id="idName"/>
+
+                <Label text="Role"/>
+                <Input id="idRole"/>
+
+                <Label text="Status"/>
+
+                <Select id="idStatus">
+
+                    <items>
+
+                        <core:Item
+                            key="Active"
+                            text="Active"/>
+
+                        <core:Item
+                            key="Inactive"
+                            text="Inactive"/>
+
+                    </items>
+
+                </Select>
+
+                <Label text="Joining Date"/>
+
+                <DatePicker
+                    id="idJoinDate"/>
+
+                <Label text="Department"/>
+
+                <Select id="idDepartment">
+
+                    <items>
+
+                        <core:Item
+                            key="IT"
+                            text="IT"/>
+
+                        <core:Item
+                            key="HR"
+                            text="HR"/>
+
+                        <core:Item
+                            key="Finance"
+                            text="Finance"/>
+
+                    </items>
+
+                </Select>
+
+                <Label text="Salary"/>
+
+                <Input
+                    id="idSalary"
+                    type="Number"/>
+
+                <Button
+                    text="Add Employee"
+                    press="onAdd"
+                    type="Emphasized"/>
+
+            </VBox>
+
+            <RadioButtonGroup
+                select="onViewChange">
+
+                <buttons>
+
+                    <RadioButton
+                        text="Table"
+                        selected="true"/>
+
+                    <RadioButton
+                        text="List"/>
+
+                </buttons>
+
+            </RadioButtonGroup>
+
+            <Table
+                visible="{employeeModel2>/tableVisible}"
+                items="{employeeModel2>/Employee}">
+
+                <columns>
+
+                    <Column>
+                        <Text text="Name"/>
+                    </Column>
+
+                    <Column>
+                        <Text text="Role"/>
+                    </Column>
+
+                    <Column>
+                        <Text text="Status"/>
+                    </Column>
+
+                    <Column>
+                        <Text text="Joining Date"/>
+                    </Column>
+
+                    <Column>
+                        <Text text="Department"/>
+                    </Column>
+
+                    <Column>
+                        <Text text="Salary"/>
+                    </Column>
+
+                    <Column>
+                        <Text text="Delete"/>
+                    </Column>
+
+                </columns>
+
+                <items>
+
+                    <ColumnListItem>
+
+                        <cells>
+
+                            <Text text="{employeeModel2>name}"/>
+
+                            <Text text="{employeeModel2>role}"/>
+
+                            <Text text="{employeeModel2>status}"/>
+
+                            <Text
+                                text="{
+                                    path:'employeeModel2>joiningDate',
+                                    formatter:'.formatter.formatDate'
+                                }"/>
+
+                            <Text text="{employeeModel2>department}"/>
+
+                            <Text text="{employeeModel2>salary}"/>
+
+                            <Button
+                                icon="sap-icon://delete"
+                                press="onDelete"/>
+
+                        </cells>
+
+                    </ColumnListItem>
+
+                </items>
+
+            </Table>
+
+            <List
+                visible="{employeeModel2>/listVisible}"
+                items="{employeeModel2>/Employee}">
+
+                <items>
+
+                    <CustomListItem>
+
+                        <HBox
+                            justifyContent="SpaceBetween">
+
+                            <VBox>
+
+                                <Text
+                                    text="{employeeModel2>name}"/>
+
+                                <Text
+                                    text="{employeeModel2>role}"/>
+
+                                <Text
+                                    text="{employeeModel2>status}"/>
+
+                            </VBox>
+
+                            <Button
+                                icon="sap-icon://delete"
+                                press="onDelete"/>
+
+                        </HBox>
+
+                    </CustomListItem>
+
+                </items>
+
+            </List>
+
+        </content>
+
+    </Page>
+
+</mvc:View>
