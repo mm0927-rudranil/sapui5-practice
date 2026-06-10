@@ -317,7 +317,7 @@
          
          <!-- Formatter  -->
 
-            <Input value="{employeeModel>/name}"/>
+            <!-- <Input value="{employeeModel>/name}"/>
             <Button text="save" press="onPressSave"
                 enabled="{
                     path: 'employeeModel>/name',
@@ -338,7 +338,40 @@
                     icon="sap-icon://employee"
                     />
             </items>
-        </List>  
+        </List>   -->
+
+
+            <!-- 10/06/26 Practice -->
+
+            <!-- Expression Binding -->
+
+            <!-- <Input value="{uiModel>/name}"></Input>
+            <Button text="save" enabled="{=${uiModel>/name}.length > 0}"></Button>
+
+            <Text id="textName" text="{uiModel>/name}"></Text> -->
+
+        <!-- <HBox>
+
+            <Text text="{uiModel>/amount}" />
+
+         <GenericTag
+            visible="{= !!${uiModel>/amount} }"
+            text="{= ${uiModel>/amount} > 1000 ? 'Success' : 'Warning' }"
+            status="{= ${uiModel>/amount} > 1000 ? 'Success' : 'Warning' }" />
+
+        </HBox> -->
+
+        <!-- fragment -->
+
+        <!-- <VBox id="formContainer"> -->
+            <!-- <core:Fragment
+                id="form"
+                fragmentName="demofiori.project1.fragment.form"
+                type="XML" /> -->
+        
+        <!-- </VBox> -->
+
+        <Button text="open" press="openDialog"></Button>
 
     </Page>
 </mvc:View>

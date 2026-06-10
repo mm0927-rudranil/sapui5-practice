@@ -1,0 +1,21 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core"
+    xmlns:form="sap.ui.layout.form">
+
+    <Popover
+        title="Employee Details"
+        placement="Bottom"
+        id="employeePopover">
+
+        <VBox id="employeeDetailsContainer">
+
+            <Text text="{uiModel>/firstName}" />
+            <Text text="{uiModel>/lastName}" />
+            <Text text="{uiModel>/amount}" />
+
+        </VBox>
+
+    </Popover>
+
+</core:FragmentDefinition>

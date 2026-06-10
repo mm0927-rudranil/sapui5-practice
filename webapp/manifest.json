@@ -92,8 +92,8 @@
 
       "targets": {
          "TargetView1": {     
-          "id": "View3",
-          "name": "View3"
+          "id": "View1",
+          "name": "View1"
         }
       }
     },
