@@ -1,0 +1,77 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+
+    <VBox class="sapUiSmallMargin">
+
+        <Label text="{i18n>employeeName}"/>
+
+        <Input
+            value="{employeeModel2>/formData/name}"/>
+
+        <Label text="{i18n>role}"/>
+
+        <Input
+            value="{employeeModel2>/formData/role}"/>
+
+        <Label text="{i18n>status}"/>
+
+        <Select
+            selectedKey="{employeeModel2>/formData/status}">
+
+            <items>
+
+                <core:Item
+                    key="Active"
+                    text="{i18n>active}"/>
+
+                <core:Item
+                    key="Inactive"
+                    text="{i18n>inactive}"/>
+
+            </items>
+
+        </Select>
+
+        <Label text="{i18n>joiningDate}"/>
+
+        <DatePicker
+            value="{employeeModel2>/formData/joiningDate}"/>
+
+        <Label text="{i18n>department}"/>
+
+        <Select
+            selectedKey="{employeeModel2>/formData/department}">
+
+            <items>
+
+                <core:Item
+                    key="IT"
+                    text="{i18n>it}"/>
+
+                <core:Item
+                    key="HR"
+                    text="{i18n>hr}"/>
+
+                <core:Item
+                    key="Finance"
+                    text="{i18n>finance}"/>
+
+            </items>
+
+        </Select>
+
+        <Label text="{i18n>salary}"/>
+
+        <Input
+            type="Number"
+            value="{employeeModel2>/formData/salary}"/>
+
+        
+
+    </VBox>
+
+</core:FragmentDefinition>
+
+
+

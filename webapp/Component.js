@@ -16,25 +16,30 @@ sap.ui.define([
             // call the base component's init function
             UIComponent.prototype.init.apply(this, arguments);
 
-            var oData = {
-                name: "Rudra",
-                // Employee: [
-                //     {
-                //         name: "Employee 1",
-                //         role: "Developer",
-                //         type: "Active"
-                //     },
-                // ]    
-            };
+            // var oData = {
+            //     name: "Rudra",
+            //     // Employee: [
+            //     //     {
+            //     //         name: "Employee 1",
+            //     //         role: "Developer",
+            //     //         type: "Active"
+            //     //     },
+            //     // ]    
+            // };
 
-            var oModel = new sap.ui.model.json.JSONModel(oData);
+            // var oModel = new sap.ui.model.json.JSONModel(oData);
 
-            this.setModel(oModel, "employeeModel");
-            
+            // this.setModel(oModel, "employeeModel");
+
             // this.setModel(oModel, "companyModel");
             // set the device model
             this.setModel(models.createDeviceModel(), "device");
-            this.setModel(models.createEmployeeModel(), "employeeModel2");
+            
+
+            this.setModel(
+                models.createEmployeeModel(),
+                "employeeModel2"
+            );
 
             // enable routing
             this.getRouter().initialize();

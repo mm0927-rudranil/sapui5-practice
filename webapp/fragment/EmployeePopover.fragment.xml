@@ -1,0 +1,39 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+
+    <Popover
+        title="{i18n>popoverTitle}">
+
+        <VBox
+            class="sapUiSmallMargin">
+
+            <Title
+                text="{i18n>employeeDetails}"/>
+
+            <Text
+                text="This application demonstrates:"/>
+
+            <Text
+                text="CRUD Operations"/>
+
+            <Text
+                text="Global JSON Model"/>
+
+            <Text
+                text="Fragments"/>
+
+            <Text
+                text="Data Binding"/>
+
+            <Text
+                text="Formatter"/>
+
+            <Text
+                text="Lifecycle Hooks"/>
+
+        </VBox>
+
+    </Popover>
+
+</core:FragmentDefinition>

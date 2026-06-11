@@ -3,6 +3,7 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
     xmlns:core="sap.ui.core"
+    xmlns:uxap="sap.uxap"
 >
     <Page title=  "{i18n>welcome}">
             <!-- "SAPUI5 Controls Practice" -->
@@ -371,7 +372,64 @@
         
         <!-- </VBox> -->
 
-        <Button text="open" press="openDialog"></Button>
+        <!-- <Button text="open" press="openDialog"></Button> -->
+
+
+        <!-- 11/06/26 Practice -->
+
+        <uxap:ObjectPageLayout id="objectPageLayout" showHeaderContent="true" useIconTabBar="true">
+
+            <uxap:headerTitle>
+            
+                <uxap:ObjectPageDynamicHeaderTitle >
+                    <uxap:heading>
+                        <Title text="{i18n>employeeDetails}"/>
+
+                        
+                    </uxap:heading>
+
+                    <uxap:actions>
+                        <Button text="Edit" press="onEditPress"/>
+                    </uxap:actions>
+                </uxap:ObjectPageDynamicHeaderTitle>
+            </uxap:headerTitle>
+        
+            <uxap:headerContent>
+                 <Text text="Employee id:0989"></Text>
+            </uxap:headerContent>
+
+            	<uxap:sections>
+			<uxap:ObjectPageSection titleUppercase="false" id="goals" title="2024 Goals Plan">
+			<uxap:subSections>
+				<uxap:ObjectPageSubSection id="goalsSS1" titleUppercase="false">
+					
+                    <uxap:blocks>
+                        <Text text="Employee Name"></Text>
+                    </uxap:blocks>
+
+				</uxap:ObjectPageSubSection>
+			</uxap:subSections>
+			</uxap:ObjectPageSection>
+
+            </uxap:sections>
+
+
+            <uxap:sections>
+			<uxap:ObjectPageSection titleUppercase="false" id="goals2" title="2026 Goals Plan">
+			<uxap:subSections>
+				<uxap:ObjectPageSubSection id="goalsSS2" titleUppercase="false">
+					
+                    <uxap:blocks>
+                        <Text text="Employee DOB"></Text>
+                    </uxap:blocks>
+
+				</uxap:ObjectPageSubSection>
+			</uxap:subSections>
+			</uxap:ObjectPageSection>
+
+            </uxap:sections>
+
+        </uxap:ObjectPageLayout>
 
     </Page>
 </mvc:View>

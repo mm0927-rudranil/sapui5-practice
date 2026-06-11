@@ -1,0 +1,55 @@
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+
+    <List
+        visible="{employeeModel2>/listVisible}"
+        items="{employeeModel2>/Employee}">
+
+        <items>
+
+            <CustomListItem>
+
+                <HBox
+                    justifyContent="SpaceBetween"
+                    width="100%">
+
+                    <VBox>
+
+                        <Text
+                            text="{employeeModel2>name}"/>
+
+                        <Text
+                            text="{employeeModel2>role}"/>
+
+                        <Text
+                            text="{employeeModel2>status}"/>
+
+                        <Text
+                            text="{employeeModel2>department}"/>
+
+                    </VBox>
+
+                    <HBox>
+
+                        <Button
+                            text="{i18n>updateEmployee}"
+                            type="Emphasized"
+                            press="onUpdate"/>
+
+                        <Button
+                            text="{i18n>delete}"
+                            type="Reject"
+                            press="onDelete"/>
+
+                    </HBox>
+
+                </HBox>
+
+            </CustomListItem>
+
+        </items>
+
+    </List>
+
+</core:FragmentDefinition>

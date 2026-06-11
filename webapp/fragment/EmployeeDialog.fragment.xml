@@ -1,0 +1,36 @@
+
+<core:FragmentDefinition
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+
+    <Dialog
+        id="updateDialog"
+        title="{i18n>dialogTitle}">
+
+        <content>
+
+            <core:Fragment
+                fragmentName="demofiori.project1.fragment.EmployeeForm"
+                type="XML" />
+
+        </content>
+
+        <beginButton>
+
+            <Button
+                text="{i18n>save}"
+                press="onSaveUpdate" />
+
+        </beginButton>
+
+        <endButton>
+
+            <Button
+                text="{i18n>cancel}"
+                press="onCloseDialog" />
+
+        </endButton>
+
+    </Dialog>
+
+</core:FragmentDefinition>
